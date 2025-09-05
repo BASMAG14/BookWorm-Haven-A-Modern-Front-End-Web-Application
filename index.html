@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookStore UI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo">📚 BookStore</a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#books">Books</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="cart-indicator">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="content">
+      <h3>Welcome to Our Bookstore</h3>
+      <p>Explore a curated collection of timeless books</p>
+      <a href="#books" class="btn">Browse Now</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2 class="heading">About Us</h2>
+    <p>We offer a wide variety of books in all genres, carefully selected for avid readers and new learners.</p>
+  </section>
+
+  <!-- Books -->
+  <section class="books" id="books">
+    <h2 class="heading">Latest Books</h2>
+    <div class="box-container" id="book-list">
+      <!-- JavaScript will inject book cards here -->
+    </div>
+  </section>
+
+  <!-- Manga Carousel Section -->
+  <section class="carousel-section">
+    <h2 class="heading">Manga</h2>
+    <img src="manga0.jpg" style="width: 150px; margin: 20px auto; display: block;" />
+
+    <div class="carousel-container">
+      <button class="carousel-btn prev">&#10094;</button>
+
+      <div class="carousel-track" id="carousel-track">
+        <!-- Manga 1 -->
+        <div class="product-card">
+          <img src="manga1.jpg" alt="Sakamoto Days">
+          <h4>Sakamoto Days manga</h4>
+          <p><span class="price">150dh</span> <span class="old-price">200dh</span></p>
+          <div class="card-actions">
+            <button class="icon-btn">🤍</button>
+            <button class="icon-btn">🛒</button>
+          </div>
+        </div>
+
+        <!-- Manga 2 -->
+        <div class="product-card">
+          <img src="manga2.jpg" alt="Dragon Ball Z">
+          <h4>Dragon Ball Z</h4>
+          <p><span class="price">50dh</span> <span class="old-price">100dh</span></p>
+          <div class="card-actions">
+            <button class="icon-btn">🤍</button>
+            <button class="icon-btn">🛒</button>
+          </div>
+        </div>
+
+        <!-- Manga 3 -->
+        <div class="product-card">
+          <img src="manga3.jpg" alt="Berserk">
+          <h4>Berserk</h4>
+          <p><span class="price">50dh</span> <span class="old-price">100dh</span></p>
+          <div class="card-actions">
+            <button class="icon-btn">🤍</button>
+            <button class="icon-btn">🛒</button>
+          </div>
+        </div>
+
+        <!-- Manga 4 -->
+        <div class="product-card">
+          <img src="manga4.jpg" alt="Attack on Titan">
+          <h4>Attack on Titan</h4>
+          <p><span class="price">50dh</span> <span class="old-price">70dh</span></p>
+          <div class="card-actions">
+            <button class="icon-btn">🤍</button>
+            <button class="icon-btn">🛒</button>
+          </div>
+        </div>
+        <!-- Manga 5 -->
+        <div class="product-card">
+          <img src="manga5.jpg" alt="Berserk">
+          <h4>Inu-Yasha</h4>
+          <p><span class="price">50dh</span> <span class="old-price">100dh</span></p>
+          <div class="card-actions">
+            <button class="icon-btn">🤍</button>
+            <button class="icon-btn">🛒</button>
+          </div>
+        </div>
+        <!-- Manga 6 -->
+        <div class="product-card">
+          <img src="manga6.jpg" alt="Berserk">
+          <h4>Demon Slayer</h4>
+          <p><span class="price">50dh</span> <span class="old-price">100dh</span></p>
+          <div class="card-actions">
+            <button class="icon-btn">🤍</button>
+            <button class="icon-btn">🛒</button>
+          </div>
+        </div>
+        <!-- Manga 7 -->
+        <div class="product-card">
+          <img src="manga7.jpg" alt="Berserk">
+          <h4>My Hero Academia</h4>
+          <p><span class="price">50dh</span> <span class="old-price">100dh</span></p>
+          <div class="card-actions">
+            <button class="icon-btn">🤍</button>
+            <button class="icon-btn">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+
+    <a href="#" class="btn">← other</a>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews" id="reviews">
+    <h2 class="heading">Reader Reviews</h2>
+    <div class="review-box">
+      <p>⭐️⭐️⭐️⭐️⭐️ <br> "Amazing selection and fast delivery!"</p>
+      <h4>- Sarah</h4>
+    </div>
+    <div class="review-box">
+      <p>⭐️⭐️⭐️⭐️ <br> "Found all my favorites in one place."</p>
+      <h4>- Ahmed</h4>
+    </div>
+    <div class="review-box">
+      <p>⭐️⭐️⭐️⭐️ <br> "Great Service."</p>
+      <h4>- Ihssane</h4>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-box">
+        <h3>About Blue Bookstore</h3>
+        <p>Blue Bookstore is a leading bookstore in Egypt. We offer a curated selection of top Arabic and English titles at reader-friendly prices.</p>
+      </div>
+      <div class="footer-box">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#">All Books</a></li>
+          <li><a href="#">Translated Novels</a></li>
+          <li><a href="#">Arabic Literature</a></li>
+          <li><a href="#">Self Development</a></li>
+          <li><a href="#">English Books</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Stationery & Gifts</a></li>
+          <li><a href="#">Religious Books</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="#">How to Buy</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Shipping Info</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h3>Contact Us</h3>
+        <p>Email: info@bluebookstores.com</p>
+        <p>Phone: +201288286090</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a><br>
+          <a href="#"><i class="fab fa-tiktok"></i> TikTok</a><br>
+          <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a><br>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Blue Bookstore. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
